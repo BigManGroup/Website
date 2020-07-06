@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>The Big Man Group</title>
+        <link rel="stylesheet" href="index.css">
+        <link href="/BrooklineWebkit/stylesheet.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="/favicon.png"/>
+        <script src="index.js"></script>
+    </head>
+
+    <body onload="clickDefault()">
+        <div class="header">
+            <p id="hdrbmg">The Big Man Group</p>
+            <div class="tabsystem">
+                <button class="tabButt" id="default" onclick="tabSelect(event,'media')">Media</button>
+                <button class="tabButt" onclick="tabSelect(event,'quotes')">Quotes</button>
+            </div>
+        </div>
+        <div id="media" class="content">
+            <div class="latest"><p id="latetext">Latest video:</p></div>
+            <div class='embed-container'>
+                <iframe src='https://www.youtube.com/embed/F0T4ikZCECk' frameborder='0' allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <div id="quotes" class="content">
+            <h1 id="text-quo">Big Man Quote</h1>
+            <h2 id="bigquote">"ass, boobs, pussy, feet
+
+                the 4 nations lived in harmony, but everything changed when the feet niggas attacked
+                only johnny sins, the master of the elements, could stop them
+                but when the world needed him most, he vanished"</h2>
+            <h3 id="quoteman">-DatDoddo, 2019</h3>
+        </div>
+    </body>
+</html>
