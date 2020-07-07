@@ -23,3 +23,22 @@ function tabSelect(evt, tabName){
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+function getQuote() {
+    return new Promise((resolve, reject) => {
+        let request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+            if(request.status === 200){} {
+                let result = JSON.parse(request.responseText);
+                resolve (result);
+
+                document.getElementById("bigquote").innerText = result.text;
+                document.getElementById("quoteman").innerText = `-${result.nickname}, ${result.year}`;
+            }
+        }
+        request.open("GET", "https://bigman.group/api/randomquote/", true);
+        request.send();
+    });
+}
+
+getQuote().catch(error => console.log(error));
