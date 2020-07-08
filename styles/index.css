@@ -25,13 +25,13 @@ body{
 .latest{
     position:relative;
     left:25%;
-    padding-top:1em;
     padding-bottom:0;
     font-size:2em;
     font-family: 'brooklinecondensed';
     text-decoration:underline;
     color:lightcoral;
     -webkit-text-stroke: 0.05em black;
+    width:75%;
 }
 
 .embed-container { 
@@ -54,7 +54,7 @@ body{
 
 .tabsystem{
     background-color: #ffcdac;
-    padding-bottom:1em;
+    margin-bottom: 5em;
 }
 .tabsystem button {
     background-color: inherit;
