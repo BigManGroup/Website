@@ -22,7 +22,6 @@ function tabSelect(evt, tabName){
     //Show selected tab
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
-    getQuote().catch();
 }
 
 function getQuote() {
