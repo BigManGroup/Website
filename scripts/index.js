@@ -27,7 +27,7 @@ function tabSelect(evt, tabName){
 function getQuote() {
     return new Promise((resolve, reject) => {
         let request = new XMLHttpRequest();
-        request.onreadystatechange = function () {
+        request.onload = function () {
             if(request.status === 200){} {
                 let result = JSON.parse(request.responseText);
                 resolve (result);
